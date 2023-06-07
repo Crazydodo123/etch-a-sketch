@@ -23,11 +23,6 @@ body {
     display: flex;
 }
 
-.box {
-    height: 56.25px;
-    width: 56.25px;
-}
-
 .colored {
     background-color: black;
 }

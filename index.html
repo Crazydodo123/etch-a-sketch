@@ -12,7 +12,7 @@
         <div class="left-elements">
             <p>What will be the size of your canvas?</p>
             <form onsubmit="return false">
-                <input type="number" id="resolution" max="100" onchange="updateCanvas()">
+                <input type="number" id="resolution" min="1" max="100" onchange="updateCanvas()">
                 <input type="submit" value="Confirm">
             </form>
         </div>

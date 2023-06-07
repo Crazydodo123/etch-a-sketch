@@ -33,6 +33,9 @@ function redefine() {
 
 
 function createBox(number) {
+    const dimension = 900 / number;
+    box.style.cssText = `height: ${dimension}px; width: ${dimension}px`;
+
     for (let i = 1; i <= number; i++) {
         row.appendChild(box.cloneNode());
     }
@@ -45,13 +48,12 @@ function createBox(number) {
 
 function setupBox(boxNum) {
     const boxes = document.querySelectorAll('.box');
-    const dimension = 900 / boxNum;
     
     boxes.forEach(box => {
         box.addEventListener('mouseenter', () => {
             draw(box);
         });
-        box.style.cssText = `height: ${dimension}px; width: ${dimension}px`;
+        
     });
 }
 
@@ -66,9 +68,10 @@ function createCanvas(boxNum) {
 function updateCanvas() {
     number = document.querySelector('#resolution').value;
 
+    if (number > 100) return false;
     createCanvas(number);
 }
 
 // Initializing
 
-createCanvas(16)
+createCanvas(16);
