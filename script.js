@@ -89,7 +89,7 @@ function createCanvas(boxNum) {
 function updateCanvas() {
     number = document.querySelector('#resolution').value;
 
-    if (number > 100) return false;
+    if (number > 100 || number < 1) return false;
     createCanvas(number);
 }
 
