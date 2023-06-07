@@ -6,17 +6,51 @@ html {
 
 body {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 100%;
     margin: 0;
 }
 
 
+/* Left stuff  */
+
+.left-elements {
+    margin: 0 auto;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.button {
+    width: 100px;
+    height: 36px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rgbOn {
+    background: linear-gradient(to right, #ff3b76, #9f6cf7, #26c6da, #eeff41, #ff5722);
+}
+
+.greyOn {
+    background: lightgrey;
+}
+
+/* Drawing pad */
+
 #container {
     border: 1px solid black;
     width: 900px;
     height: 900px;
+    margin-right: 300px;
 }
 
 .row {
