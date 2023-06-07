@@ -9,6 +9,14 @@
     </head>
 
     <body>
+        <div class="left-elements">
+            <p>What will be the size of your canvas?</p>
+            <form onsubmit="return false">
+                <input type="number" id="resolution" max="100" onchange="updateCanvas()">
+                <input type="submit" value="Confirm">
+            </form>
+        </div>
+
         <div id="container"></div>
     </body>
 </html>
