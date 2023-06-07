@@ -15,8 +15,16 @@ body {
 
 /* Left stuff  */
 
-.left-elements {
-    margin: 0 auto;
+.left-elements-box {
+    flex: 1 1 360px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.left-elements {    
+    min-width: 260px;
+    padding: 16px;
 }
 
 .buttons {
@@ -50,7 +58,6 @@ body {
     border: 1px solid black;
     width: 900px;
     height: 900px;
-    margin-right: 300px;
 }
 
 .row {
@@ -59,4 +66,13 @@ body {
 
 .colored {
     background-color: black;
+}
+
+
+/* Right stuff */
+
+.right-padding {
+    height: 100%;
+    width: 300px;
+    flex: 1 1 20px;
 }
